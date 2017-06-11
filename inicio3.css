@@ -1,0 +1,134 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	
+}
+
+
+
+html {
+	height: 100%;
+	
+	font-family: 'Amiri', serif;
+	
+}
+
+.cuerpo{
+	
+	width: 100%;
+	height: 100%;
+	background: #2d343d;
+	
+	
+}
+
+
+.header{	
+
+	background: #FF6A00;
+	height: 150px;	
+	margin:0 auto;
+	font-family: 'Amiri', serif;
+}
+
+
+
+.contenedor{
+	
+	width: 65%;
+	min-height:100%;
+	margin: 0 auto;
+	background: #e0e0e0; 
+
+}
+
+
+.centro{
+	
+	margin: 0 auto;	
+	text-align: center;
+}
+
+
+
+table{
+	margin: 0 auto;
+	
+}
+
+#tabla {
+	border: 1px solid black;
+	background: white;
+}
+
+#celdas{
+	width: 300px;
+	height: 10px;
+
+}
+
+
+.campos{
+	height: 50px;
+	width: 350px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	background-color: white;
+	text-align: left;
+	font-size: 20px;
+	font-family: 'Amiri', serif;
+}
+
+
+
+
+
+.archivo{
+	width: 200px;
+	height: 50px;
+	
+	border: 1px;
+
+
+	}
+
+textarea {
+	width: 350px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+    resize: none;
+    box-sizing: border-box;
+	background-color: white;
+	text-align: left;
+	font-size: 15px;
+}
+
+.descripcion{
+
+	margin-top: 15px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	background-color: white;
+	
+	
+	font-size: 15px;
+}
+
+.botones{
+	background-color: #FF6A00;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-decoration: none;
+   	margin-top: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-family: 'Amiri', serif;
+    
+}
+
+
+
+
+
