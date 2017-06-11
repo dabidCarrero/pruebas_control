@@ -53,6 +53,8 @@
 							<th>IP privada</th>
 							<th>IP remota</th>
 							<th>PING</th>
+							<th>Editar</th>
+							<th>Borrar</th>
 							<th>Estado</th>
 						</tr>
 					</thead>
@@ -70,6 +72,8 @@
 						<td align=\"center\">" . $row['ip_ubicacion'] . "</td>
 						<td align=\"center\">" . $row['din_ip_ubicacion'] . "</td>
 						<td><a href=\"ping.php?id=" . $row['id_ubicacion'] . "\"> <img src=\"imagenes/ping_logo3.png\" width=\"75\" height=\"75\"></td></a>
+						<td><a href=\"editar.php?id=" . $row['id_ubicacion'] . "\"> <img src=\"imagenes/edit.png\" width=\"75\" height=\"75\"></td></a>
+						<td><a href=\"borrar.php?id=" . $row['id_ubicacion'] . "\" onclick=\"return confirm('¿Eliminar dispositivo?');\"> <img src=\"imagenes/delete.png\" width=\"75\" height=\"75\"></td></a>
 						<td >"; if($row['registrada'] == 1 ){ 
 							echo "
 							<a href=\"add_connection.php\"><img src=\"imagenes/conectada.png\" width=\"75\" height=\"75\"></a>
