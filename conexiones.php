@@ -12,11 +12,16 @@
 
 	
 ?>
+<?php
+
+    header('Content-Type: text/html; charset=ISO-8859-1');
+
+?>
 
 <!DOCTYPE html>
 <html lang="es">
 	<head>
-		<meta charset="UTF-8">
+		
 		<meta name="viewport" content="width=device-width, initial-scale=0.5">
 		<title >Asterisk</title>
 		<link href="inicio3.css" rel="stylesheet" type="text/css" media="all">
@@ -42,10 +47,12 @@
 				<table border="2">
 					<thead>
 						<tr>
-							<th>Nombre ubicación</th>
+							<th>ID_cliente</th>
+							<th>Nombre cliente</th>
 							<th>Ciudad cliente</th>
-							<th>IP ubicación</th>
-							<th>IP dinámica</th>
+							<th>IP privada</th>
+							<th>IP remota</th>
+							<th>PING</th>
 							<th>Estado</th>
 						</tr>
 					</thead>
@@ -57,10 +64,12 @@
 					while ($row = mysqli_fetch_array($resultado)) {
 					echo "
 					<tr >
+						<td align=\"center\">" . $row['id_ubicacion'] . "</td>
 						<td align=\"center\">" . $row['nombre_ubicacion'] . "</td>
 						<td align=\"center\">" . $row['ciudad_ubicacion'] . "</td>
 						<td align=\"center\">" . $row['ip_ubicacion'] . "</td>
 						<td align=\"center\">" . $row['din_ip_ubicacion'] . "</td>
+						<td><a href=\"ping.php?id=" . $row['id_ubicacion'] . "\"> <img src=\"imagenes/ping_logo3.png\" width=\"75\" height=\"75\"></td></a>
 						<td >"; if($row['registrada'] == 1 ){ 
 							echo "
 							<a href=\"add_connection.php\"><img src=\"imagenes/conectada.png\" width=\"75\" height=\"75\"></a>
