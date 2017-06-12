@@ -44,7 +44,8 @@
 
 		if(filter_var($direccion_ip, FILTER_VALIDATE_IP)){
 
-			$sql = "INSERT INTO asterisk.ubicaciones(nombre_ubicacion, ciudad_ubicacion, ip_ubicacion, registrada) VALUES('$ubicacion', '$ciudad_cliente', '$direccion_ip', 0)";
+			$sql = "INSERT INTO asterisk.ubicaciones(nombre_ubicacion, ciudad_ubicacion, ip_ubicacion, registrada) 
+					VALUES('$ubicacion', '$ciudad_cliente', '$direccion_ip', 0)";
 			mysqli_query($conexion, $sql) or die("error_añadir_ubicación: " . mysqli_error($conexion));
 
 			echo "<script type=\"text/javascript\">
